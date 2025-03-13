@@ -81,15 +81,6 @@
             </ul>
         </div>
 
-  <div class="section">
-            <h2>Acknowledgments</h2>
-            <p>Special thanks to STEAM Hackathon for providing the platform to showcase our project.</p>
-        </div>
-
-  <div class="section">
-            <h2>Contact</h2>
-            <p>For any inquiries, please contact <a href="mailto:kaussaradammalik@gmail.com">Kaussar A</a>.</p>
-        </div>
-    </div>
+</div>
 </body>
 </html>
