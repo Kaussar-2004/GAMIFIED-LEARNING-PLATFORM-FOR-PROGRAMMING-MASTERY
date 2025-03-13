@@ -1,0 +1,136 @@
+<!-- Learning Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Java - Basics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="learning-page">
+    <div class="learning-container">
+        <h1>Java Basics - Learn with Diagrams</h1>
+        <p>Java is a popular object-oriented programming language. Let's start with the basics.</p>
+        
+        <h2>1. Java Program Structure</h2>
+        <img src="images/java-structure.png" alt="Java Program Structure" class="diagram">
+        <p>A basic Java program consists of a class, a main method, and statements inside the method.</p>
+        <pre class="code-box">
+            <code>
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+            </code>
+        </pre>
+        
+        <h2>2. Variables and Data Types</h2>
+        <img src="images/java-variables.png" alt="Java Variables" class="diagram">
+        <p>Java has different data types for storing values:</p>
+        <ul>
+            <li><strong>int</strong> - Integer numbers</li>
+            <li><strong>double</strong> - Decimal numbers</li>
+            <li><strong>char</strong> - Single character</li>
+            <li><strong>boolean</strong> - True or False</li>
+        </ul>
+        
+        <h2>3. Conditional Statements</h2>
+        <img src="images/java-conditions.png" alt="Java Conditional Statements" class="diagram">
+        <p>Conditional statements allow decision-making in code:</p>
+        <pre class="code-box">
+            <code>
+if (x > 0) {
+    System.out.println("Positive Number");
+} else {
+    System.out.println("Negative Number");
+}
+            </code>
+        </pre>
+        
+        <h2>4. Loops in Java</h2>
+        <img src="images/java-loops.png" alt="Java Loops" class="diagram">
+        <p>Loops are used to repeat a block of code multiple times.</p>
+        <pre class="code-box">
+            <code>
+for (int i = 0; i < 5; i++) {
+    System.out.println("Iteration: " + i);
+}
+            </code>
+        </pre>
+        
+        <h2>5. Functions in Java</h2>
+        <img src="images/java-functions.png" alt="Java Functions" class="diagram">
+        <p>Functions (methods) allow code reusability.</p>
+        <pre class="code-box">
+            <code>
+public static int add(int a, int b) {
+    return a + b;
+}
+            </code>
+        </pre>
+        
+        <a href="game.html" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
+
+<!-- styles.css -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.learning-container {
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1.5s;
+}
+.diagram {
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
+    display: block;
+}
+.code-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+    overflow-x: auto;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    background: #00c6ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+
+<!-- script.js -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let codeBlocks = document.querySelectorAll(".code-box");
+    codeBlocks.forEach(block => {
+        block.addEventListener("click", function() {
+            navigator.clipboard.writeText(block.innerText);
+            alert("Code copied to clipboard!");
+        });
+    });
+});
+</script>
