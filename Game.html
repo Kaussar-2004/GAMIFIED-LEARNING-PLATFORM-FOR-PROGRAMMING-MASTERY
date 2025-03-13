@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamified Programming Learning</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome to Gamified Programming Learning</h1>
+        <p class="description">Learn programming in a fun and interactive way with challenges, quizzes, and mini-games.</p>
+        <div class="buttons">
+            <button onclick="window.location.href='learning.html'">Start Learning</button>
+            <button onclick="window.location.href='http://localhost:8888/notebooks/Desktop/Gameeeeeee1.ipynb';">Play Game</button>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
+
+<!-- Login Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+</head>
+<body class="login-page">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Register Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="register-page">
+    <div class="register-container">
+        <h2>Register</h2>
+        <form id="register-form">
+            <input type="text" id="register-username" placeholder="Username" required>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Styles CSS -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    transition: background 1s ease-in-out;
+}
+.container {
+    margin-top: 50px;
+    animation: fadeIn 1.5s;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #00c6ff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+button:hover {
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+</style>
+
+<!-- JavaScript -->
+<script>
+document.getElementById('login-form')?.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Login successful!');
+    window.location.href = 'game.html';
+});
+
+document.getElementById('register-form')?.addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Registration successful! Redirecting to login...');
+    window.location.href = 'game.html';
+});
+</script>
