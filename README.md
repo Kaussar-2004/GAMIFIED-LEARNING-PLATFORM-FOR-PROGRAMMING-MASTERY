@@ -40,6 +40,7 @@
             </ul>
     <img src="ph1.png" alt="First Page">
     <img src="ph2.png" alt="Second Page">
+      <img src="Ph.png" alt="PyGame">
 </div>
 
   <div class="section">
