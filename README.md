@@ -39,8 +39,8 @@
                 <li>Drag-and-drop visual coding blocks transitioning to text-based programming.</li>
             </ul>
     <img src="ph1.png" alt="First Page">
-    
-        </div>
+    <img src="ph2.png" alt="Second Page">
+</div>
 
   <div class="section">
             <h2>Technical Approach</h2>
